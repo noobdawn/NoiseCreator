@@ -414,7 +414,7 @@ public class NoiseCreator : EditorWindow
     private float WorleyNoise1D(Vector2 p)
     {
         float res = worleySpace.magnitude;
-        foreach(Vector2 rp in randomPoint)
+        foreach (Vector2 rp in randomPoint)
         {
             var distanceRp = (p - rp).magnitude;
             res = distanceRp < res ? distanceRp : res;
